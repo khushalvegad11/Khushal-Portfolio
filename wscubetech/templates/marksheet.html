@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+
+<div class="section contact" id="contact">
+    <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">MARKSHEET</h4>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <form method="post">
+                                {% csrf_token %}
+
+                                {{form}}
+                                    
+                                    <div>
+                                        <label for="">subject1</label>
+                                        <input type="text"  value="{{s1}}"name="subject1" class="form-control">
+                                    </div>
+
+                                    <div>
+                                        <label for="">subject2</label>
+                                        <input type="text" value="{{s2}}" name="subject2"  class="form-control">
+                                    </div>
+
+                                    <div>
+                                        <label for="">subject3</label>
+                                        <input type="text" value="{{s3}}" name="subject3"  class="form-control">
+                                    </div>
+
+                                    <div>
+                                        <label for="">subject4</label>
+                                        <input type="text"  value="{{s4}}"name="subject4"  class="form-control">
+                                    </div>
+
+                                    <div>
+                                        <label for="">subject5</label>
+                                        <input type="text" value="{{s5}}" name="subject5" class="form-control">
+                                    </div>
+                                    
+                                    <div class="pt-4">
+                                        <button type="submit">marksheet</button>                                   
+                                    </div>
+                                    <div class="pt-4"> 
+
+                                    </div>
+
+                                    <div>
+                                        <label for="">Total</label>
+                                        <input type="text" value="{{total}}" class="form-control">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="">Percontage</label>
+                                        <input type="text"  value="{{per}}" class="form-control">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="">Devision</label>
+                                        <input type="text" value="{{div}}"  class="form-control">
+                                    </div>
+                                    
+                                    
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+                {% endblock %}

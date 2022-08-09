@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTC"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+            <title>vk</title>
+
+                <link rel= "stylesheet" href="johndoe.css"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+
+    </head>
+    <body>
+
+        <div class="share-btn-container">
+
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a> 
+
+        </div>
+    
+    </body>
+    
+</html-->
+
+
+<!--html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="centerdiv"></div>
+        <a href="https://www.facebook.com/khushal.vegad.50" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://instagram.com/_khushal_vegad_?igshid=YmMyMTA2M2Y=" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/khushal-vegad-2a180b1b8" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://wa.me/qr/7HKB4HZ7VMOVM1" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://twitter.com/khushal_vegad_?t=4AcJAXUruzkAXOhZkx1Bqg&s=08" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+</body>
+</html-->
+<!--section class="section" id="service">
+    <div class="container">
+        <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+        <div class="row">
+            <form method="get">
+                <input type="text" name="servicename" value=""/>
+                <input type="submit" value="search"/>
+            </form><br>
+            {% for n in serviceData %}
+            <div class="col-md-4 col-sm-6">
+
+                <div class="card mb-5">
+                <div class="card-header has-icon">
+                        <i class="ti-vector text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <samp class="{{n.service_icon}}"></samp>
+                        <h5 class="mb-3 card-title text-dark">{{n.service_title}}</h5>
+                        <P class="subtitle">{{n.service_des}}</P>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                <div class="card-header has-icon">
+                        <i class="ti-write text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Asperiores</h5>
+                        <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                <div class="card-header has-icon">
+                        <i class="ti-package text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Tempora</h5>
+                        <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                <div class="card-header has-icon">
+                        <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Provident</h5>
+                        <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                <div class="card-header has-icon">
+                        <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Consectetur</h5>
+                        <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                <div class="card-header has-icon">
+                        <i class="ti-support text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Veritatis</h5>
+                        <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section-->
+
+
+
+<!--html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="static/documents/Khushal's Resume (8).pdf" download class="btn btn-primary btn-rounded">download</a>
+</body>
+</html-->
+<!--html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="github-btn">
+        <a href="https://github.com/khushalvegad11" target="_blank"></a>
+            <i class="fab fa-github"></i>
+
+</body>
+</html-->
+{% endblock %}

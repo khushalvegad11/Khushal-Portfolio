@@ -1,0 +1,132 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <meta charset="UTC"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Khushal Vegad Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel= "stylesheet" href="johndoe.css"/>
+
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="/static/css/johndoe.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>
+              
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">KHUSHAL VEGAD</h1>
+                <h6 class="header-mono" >Python Django | Developer</h6>
+                
+        <div class="share-btn-container">
+            <a href="#" class="facebook-btn">
+                <a href="https://www.facebook.com/khushal.vegad.50" target="_blank">
+                    <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" class="instagram-btn">
+                <a href="https://instagram.com/_khushal_vegad_?igshid=YmMyMTA2M2Y=" target="_blank">
+                    <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="whatsapp-btn">
+                <a href="https://wa.me/qr/7HKB4HZ7VMOVM1" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="#" class="linkedin-btn">
+                <a href="https://www.linkedin.com/in/khushal-vegad-2a180b1b8" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" class="twitter-btn">
+                <a href="https://twitter.com/khushal_vegad_?t=4AcJAXUruzkAXOhZkx1Bqg&s=08" target="_blank">
+                    <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#" class="github-btn">
+                <a href="https://github.com/khushalvegad11" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+            </a>  
+
+            
+        </div>
+
+            <a href="static/documents/Khushal's Resume (8).pdf" download class="btn btn-primary btn-rounded">Download Resume</a>
+        
+       
+            </div>
+        </div>
+        
+    </header>
+
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+            <div class="border">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-white lnr lnr-menu"></span>
+                </button>
+    
+                <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-body">
+                        <li class="{% if request.path == '/'%} active {% endif %}">
+                            <a href="{% url 'home' %}" class="nav-link">Home</a>
+                        </li>
+                        <li class="{% if request.path == '/about-us/' %} active {% endif %}">
+                            <a href="{% url 'about' %}" class="nav-link">About</a>
+                        </li>
+                        <li class="{% if request.path == '/resume-us/' %} active {% endif %}">
+                            <a href="{% url 'resume' %}" class="nav-link">Resume</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav brand">
+                        <img src="/static/imgs/avatar.jpg/" alt="" class="brand-img">
+                        <li class="brand-txt">
+                            <h5 class="brand-title"> jvnsfjvdkbvlzdfbvldfblzjhfbjdfh zlzfh b---------------------------------- </h5>
+                            <div class="brand-subtitle">Web Designer | Developer</div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-body">
+                        <li class="{% if request.path == '/portfolio-us/' %} active {% endif %}">
+                            <a href="{% url 'portfolio' %}" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="{% if request.path == '/blog-us/' %} active {% endif %}">
+                            <a href="{% url 'blog' %}" class="nav-link">Blog</a>
+                        </li>
+                        <li class="{% if request.path == '/contact-us/' %} active {% endif %}">
+                            <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                        </li>
+                        <!--li class="{% if request.path == '/services-us/' %} active {% endif %}">
+                            <a href="{% url 'service' %}" class="nav-link">service</a>
+                        </li-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+

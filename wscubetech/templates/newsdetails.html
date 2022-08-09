@@ -1,0 +1,28 @@
+{% include "header.html" %}
+
+
+<section class="section" id="service">
+    <div class="container">
+        <h2 class="mb-5 pb-4"><span class="text-danger">#</span> {{newsDetails.news_title}}</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                {% if newsDetails.news_image != NULL %}
+                <img src="/media/news/{{ newsDeatils.news_image }}/" class="img-fluid"/>
+                {% endif %}
+                
+                <div class="card mb-5">
+                    <div class="card-header has-icon">
+                        <i class="ti-vector text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                      {{newsDetails.news_desc | safe}}
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.html" %}
+
